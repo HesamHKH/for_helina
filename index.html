@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عذرخواهی از عشق زندگیم</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Lalezar', cursive;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    
+    .photo-frame {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #ff69b4;
+      margin: 30px auto;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+      animation: pulse 2s infinite alternate;
+    }
+    
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }
+    
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #ff69b4;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    }
+    
+    .message-box {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 20px 0;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+      border: 1px solid #ff69b4;
+    }
+    
+    .message {
+      font-size: 1.3rem;
+      line-height: 2;
+      margin-bottom: 15px;
+      text-align: right;
+    }
+    
+    .signature {
+      font-style: italic;
+      color: #ff69b4;
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+    
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+    
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      color: #ff3366;
+      animation: fall linear;
+    }
+    
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+    
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(255, 105, 180, 0.7);
+      padding: 10px 20px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      z-index: 100;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+    }
+    
+    .music-control i {
+      font-size: 24px;
+      color: white;
+    }
+    
+    .music-control span {
+      font-family: 'Lalezar', cursive;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .message {
+        font-size: 1.1rem;
+      }
+      
+      .photo-frame {
+        width: 150px;
+        height: 150px;
+      }
+      
+      .music-control {
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="hearts" id="hearts"></div>
+  
+  <div class="container">
+    <h1>برای عشق زندگیم، هلینا ❤️</h1>
+    
+    <div class="photo-frame">
+      <img src="helina.jpg" alt="هلینا">
+    </div>
+    
+    <div class="message-box">
+      <p class="message">عشقم من واقعاً نمی‌خواستم ناراحتت کنم و می‌دونم که دلتو شکوندم... 😔</p>
+      <p class="message">تو فقط برای من یه دوست دختر نیستی، تو تمام آرزوهام و رویاهام هستی ✨</p>
+      <p class="message">هر لحظه بدون تو مثل یه عمر می‌گذره و نمی‌تونم این حس بد رو تحمل کنم...</p>
+      <p class="message">میدونی چرا این صفحه رو ساختم؟ چون می‌خوام ثابت کنم هیچی برام مهم‌تر از تو نیست 💖</p>
+      <p class="message">می‌دونی چقدر دوستت دارم؟ به اندازهٔ تمام ستاره‌های آسمون و ذره‌های شن‌های ساحل... 🌌</p>
+      <p class="message">ببخشیدم عزیزم، دیگه تکرار نمیشه. قول می‌دم بهترین پسر دنیا برات باشم 🤍</p>
+    </div>
+    
+    <div class="signature">
+      With all the love in the world, from the most devoted boyfriend ever... ❤️‍🔥
+    </div>
+  </div>
+  
+  <div class="music-control" id="musicControl">
+    <i class="fas fa-music"></i>
+    <span>پخش موسیقی</span>
+  </div>
+  
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+    <source src="https://dl.rozmusic.com/Music/1401/05/Stephen%20Sanchez%20-%20Until%20I%20Found%20You.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    // ایجاد قلب‌های متحرک
+    function createHearts() {
+      const heartsContainer = document.getElementById('hearts');
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+      heart.style.opacity = Math.random();
+      heartsContainer.appendChild(heart);
+      
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+    
+    setInterval(createHearts, 300);
+    
+    // کنترل موزیک
+    const music = document.getElementById('bgMusic');
+    const musicControl = document.getElementById('musicControl');
+    let isPlaying = false;
+    
+    // تنظیمات اولیه
+    music.volume = 0.7;
+    
+    // پیام راهنما
+    const showAlert = () => {
+      alert('برای پخش موسیقی، لطفاً ابتدا روی صفحه کلیک کنید');
+    };
+    
+    // فعال کردن صدا پس از اولین کلیک کاربر
+    document.addEventListener('click', function initAudio() {
+      document.removeEventListener('click', initAudio);
+      
+      music.play()
+        .then(() => {
+          isPlaying = true;
+          musicControl.innerHTML = '<i class="fas fa-pause"></i><span>توقف موسیقی</span>';
+        })
+        .catch(e => {
+          musicControl.style.display = 'flex';
+          showAlert();
+        });
+    }, { once: true });
+    
+    // کنترل پخش/توقف با دکمه
+    musicControl.addEventListener('click', function(e) {
+      e.stopPropagation();
+      
+      if (isPlaying) {
+        music.pause();
+        musicControl.innerHTML = '<i class="fas fa-music"></i><span>پخش موسیقی</span>';
+      } else {
+        music.play()
+          .then(() => {
+            musicControl.innerHTML = '<i class="fas fa-pause"></i><span>توقف موسیقی</span>';
+          })
+          .catch(e => {
+            showAlert();
+          });
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>
